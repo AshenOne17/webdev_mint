@@ -45,6 +45,28 @@ body {
     font-weight: bold;
 }
 
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Navbar Navbar Navbar"
+      "Abstract-Figure Greeting Profile-Picture"
+      "Footer  Footer  Footer ";
+  }
+  
+  .Navbar { grid-area: Navbar; }
+  
+  .Greeting { grid-area: Greeting; }
+  
+  .Profile-Picture { grid-area: Profile-Picture; }
+  
+  .Abstract-Figure { grid-area: Abstract-Figure; }
+  
+  .Footer  { grid-area: Footer ; }
+  
+
 /* Main Home Section Styling */
 .home-section {
     height: 100vh;
