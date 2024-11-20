@@ -3,7 +3,7 @@
 <head>
 	<!--  Meta  -->
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width-device-width" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!--  /Meta  -->
 
 	<title>Artem Galan Portfolio</title>
@@ -16,23 +16,38 @@
 <body>
 	<!-- Header with Navigation -->
 		<div id="header">
-			<h5 id="logomark">Jen Huls</h5>
+			<h5 id="logomark"></h5>
 			<ul id="navigation">
-				<li data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Go Home"><a id="link-home" href="#home">Home</a></li>
-				<li data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="About Me"><a id="link-about" href="#about">Über mich</a></li>
-				<li data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="My Work"><a id="link-work" href="#work">Projekte</a></li>
+				<li data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Startseite"><a id="link-home" href="#home">Home</a></li>
+				<li data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Über mich"><a id="link-about" href="#about">Über mich</a></li>
+				<li data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Meine Projekte"><a id="link-work" href="#work">Projekte</a></li>
 				<li data-tooltip aria-haspopup="true" class="has-tip right" data-disable-hover="false" tabindex="3" title="Contact Me"><a id="link-contact" href="#contact">Kontakt</a></li>
 			</ul>
 		</div>
 
+		<!--Mail link-->
+		<div id="home" class="email-block">
+			<div class="email">
+				<a href="mailto:artemgalan02@gmail.com">Email</a>
+		   </div>
+		</div>
+		<!-- /Mail link -->
+
 		<!-- Home -->
 		<div id="home" class="content">
 			<div class="greeting">
-				<h2>Hallo, ich bin Artem!</h2>
+				<h2>Hallo, ich bin<span style="color: black;"> Artem</span>!</h2>
+				<p>Du bist auf meine Portfolio angekommen!</p>
+				<p>Ich bin ein Informatiker aus der Schweiz und wohne im Opfikon.</p>
+				<p>Netzwerk-Infrastruktur und Planung sind meine beste Freunde.</p>
+				<p>Um mich kennenzulernen, klicke auf der linke Navbar!</p>
 			</div>
 			<div class="greeting">
-			
+				<img src="assets/images/Artem_AR.png" alt="AR pfp" class="AR-picture">
 			</div>
+		</div>
+
+		<div id="home" class="right-bar">
 		</div>
 		<!-- /Home -->
 		
@@ -59,6 +74,10 @@
 			</div>
 		</div>
 		<!-- /Contact -->
+
+		<footer class="footer">
+			<p>&copy; 2024 Artem Galan. All rights reserved.</p>
+		</footer>
   
     <!-- Scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
